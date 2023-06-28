@@ -6,7 +6,7 @@ public class Cliente
     public string Direccion { get; set; }
     public string Telefono { get; set; }
     public string Cupo { get; set; }
-    public string deuda { get; set; }
+    public string Deuda { get; set; }
     public bool ValidarCupoDisponible(decimal Cupo)
     {
         decimal cupoUtilizado = CalcularCupoUtilizado();
@@ -17,11 +17,11 @@ public class Cliente
 
     private decimal CalcularCupoUtilizado()
     {
-        decimal deuda = 0;
+        decimal Deuda = 0;
 
         foreach (var credito in Creditos)
         {
-            deuda += credito.Monto;
+            Deuda += credito.Monto;
         }
 
         return cupoUtilizado;
