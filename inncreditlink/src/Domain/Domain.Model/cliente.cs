@@ -25,7 +25,7 @@ public class Cliente
 
             public void GuardarEnBaseDeDatos()
             {
-                string connectionString = "tu_cadena_de_conexion"; // Reemplaza con tu cadena de conexion real
+                string connectionString = "Server=tcp:mssql-co-nop-ingenieria.database.windows.net,1433;Initial Catalog=dbinnovacion;Persist Security Info=False;User ID=dbadmin;Password=m6RdBPgfN)9GTF{2;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;"; // Reemplaza con tu cadena de conexion real
                 var clienteRepository = new ClienteRepository(connectionString);
                 clienteRepository.GuardarCliente(this);
             }
@@ -55,3 +55,4 @@ public class Cliente
     }
 
 }
+
