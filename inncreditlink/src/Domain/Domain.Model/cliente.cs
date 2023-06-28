@@ -7,5 +7,24 @@ public class Cliente
     public string Telefono { get; set; }
     public string Cupo { get; set; }
     public string deuda { get; set; }
+    public bool ValidarCupoDisponible(decimal Cupo)
+    {
+        decimal cupoUtilizado = CalcularCupoUtilizado();
+        decimal cupoDisponible = CupoMaximo - cupoUtilizado;
+
+        return Cupo <= cupoDisponible;
+    }
+
+    private decimal CalcularCupoUtilizado()
+    {
+        decimal deuda = 0;
+
+        foreach (var credito in Creditos)
+        {
+            deuda += credito.Monto;
+        }
+
+        return cupoUtilizado;
+    }
 
 }
