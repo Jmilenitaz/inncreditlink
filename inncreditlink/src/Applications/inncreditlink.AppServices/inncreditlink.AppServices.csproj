@@ -5,11 +5,11 @@
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
-    <DocumentationFile>bin\Debug\$(NetCoreTargetVersion)\PlantillaBack.AppServices.xml</DocumentationFile>
+    <DocumentationFile>bin\Debug\$(NetCoreTargetVersion)\inncreditlink.AppServices.xml</DocumentationFile>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
-    <DocumentationFile>bin\Release\$(NetCoreTargetVersion)\PlantillaBack.AppServices.xml</DocumentationFile>
+    <DocumentationFile>bin\Release\$(NetCoreTargetVersion)\inncreditlink.AppServices.xml</DocumentationFile>
   </PropertyGroup>
 	
     <ItemGroup>

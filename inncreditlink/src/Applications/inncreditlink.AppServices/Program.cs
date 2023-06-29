@@ -11,8 +11,8 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.PlatformAbstractions;
 using SC.Configuration.Provider.Mongo;
-using PlantillaBack.AppServices.Extensions;
-using PlantillaBack.AppServices.Extensions.Health;
+using inncreditlink.AppServices.Extensions;
+using inncreditlink.AppServices.Extensions.Health;
 using Serilog;
 using System.IO;
 using System.Linq;
@@ -63,7 +63,7 @@ builder.Services
     .AddVersionedApiExplorer()
     .HabilitarVesionamiento()
     .ConfigurarSwaggerConVersiones(builder.Environment, PlatformServices.Default.Application.ApplicationBasePath,
-        new string[] { "PlantillaBack.AppServices.xml" });
+        new string[] { "inncreditlink.AppServices.xml" });
 ;
 
 builder.Services
